@@ -1,0 +1,34 @@
+body
+{background-color:#FFA800;
+}
+    
+li{
+    color: white;
+    list-style-type: none;
+}
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin: 25px;
+    padding: 15px; 
+}
+img{
+    width: 100px;
+}
+div.logo-site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+div.logo-text{
+    margin-left: 20px;
+}
+nav{
+    width: 80%;
+}
