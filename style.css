@@ -1,9 +1,9 @@
 body
-{background-color:#FFA800;
+{background-color:#b87a00;
 }
     
 li{
-    color: white;
+    color: rgb(0, 0, 0);
     list-style-type: none;
 }
 ul
@@ -14,21 +14,45 @@ ul
     margin: 25px;
     padding: 15px; 
 }
-img{
-    width: 100px;
-}
 div.logo-site{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100px;
+    height: 100px;
 }
 header{
     display: flex;
     flex-direction: row;
+    background-color: #FFA800;
 }
 div.logo-text{
-    margin-left: 20px;
+margin: auto;
 }
 nav{
-    width: 80%;
+    width: 100%;
 }
+div.icon-account{
+    width: 5%;
+}
+img{
+    width: 100%;
+}
+div.commande{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+button {
+    width: 300px;
+    height: 150px;
+    font-size: 36px;
+    background-color: red;
+}
+@media (max-width 768px)
+
+
+
