@@ -59,6 +59,9 @@
         <title>Document</title>
         <link rel="stylesheet" href="./Style2.css">
         <link rel="stylesheet" href="logo-site.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -94,7 +97,7 @@
                         </div>
                         <div class="col">
                             <div class="commande">
-                                <button  type="button" class="boutton-1">à emporter</button>
+                                <button  type="button" class="boutton-1">à emporter</button> 
                                 <button type="button" class="boutton-2">Livraison</button>
                             </div>
                         </div>
@@ -103,10 +106,36 @@
 
             </section>
             <section>
-
+                <div class="slider-container">
+                    <div class="carrousel">
+                        <label for="slide-dot-1"></label>
+                        <label for="slide-dot-2"></label>
+                        <label for="slide-dot-3"></label>
+                    </div>
+        
+                    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                    <img class="slide-img" src="./pizza 1.jfif">
+        
+                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="./pizza 2.jfif">
+        
+                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                    <img class="slide-img" src="./pizza 3.jfif">
+                </div>
             </section>
             <section>
-
+                <h1>Promotions</h1>
+                <h2>La cannibale</h2>
+                <div class="image-pizza">
+                <img src="./pizza 2.jfif" alt="pizza cannibale">
+          <div class="text-1">
+                <p>Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
+                <button class="commande-boutton">Commandez</button>
+            </div>
+        </div>
+        <div class="prix2">
+        <p><del>15.99</del><span class="prix">12.99</span></p>
+    </div>
             </section>
         </main>
         <footer>
