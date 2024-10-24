@@ -254,6 +254,42 @@ button.commande-boutton {
 .prix{
 	margin-left: 100px;
 }
-.prix2{
-	
+h3 {
+	margin: 50px;
+	font-size: 16px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.footer-info, .footer-social, .footer-legal {
+    flex: 1;
+    margin: 10px; 
+}
+
+.footer-social ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.footer-social ul li {
+    margin: 5px 0;
+}
+
+.footer-social a, .footer-legal a {
+    color: #f44336;
+    text-decoration: none;
+}
+
+.footer-social a:hover, .footer-legal a:hover {
+    text-decoration: underline;
 }
