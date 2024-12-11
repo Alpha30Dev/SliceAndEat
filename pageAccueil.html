@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="./Style2.css">
+        <link rel="stylesheet" href="logo-site.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <ul id="menu">
+                    <a href="SelectionPizza.html"><li>Menu</li></a>
+                    <a href="#"><li>Promotions</li></a>
+                    <a href="#"><li>Pizza of the day</li></a>
+                    <a href="#"><li>Contact</li></a>
+                  </ul>
+                </div>
+                <div class="logo-site">
+                    <a href="pageAccueil.html">
+                        <img src="./logo-site.png" class="logo" alt="logo du site">
+                    </a>
+                </div>
+                <div class="right">
+                    <img src="./Account.png" class="utilisateur" alt="icone utilisateur">
+                    <div class="panier-container">
+                        <img src="panier.png" class="panier" alt="icone panier">
+                        <span class="panier-count">0</span>
+                    </div>
+                    <button class="deconnexion-btn">Déconnexion</button>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <div class="commande">
+                                <button  type="button" class="boutton-1">Commandez maintenant!</button> 
+                                <button type="button" class="boutton-2">Livraison</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <div class="slider-container">
+                    <div class="carrousel">
+                        <label for="slide-dot-1"></label>
+                        <label for="slide-dot-2"></label>
+                        <label for="slide-dot-3"></label>
+                    </div>
+        
+                    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                    <img class="slide-img" src="./pizzaBanner.jpg" alt="bannier de pizza">
+        
+                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="./pizzaBanner.jpg" alt="bannier de pizza">
+        
+                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                    <img class="slide-img" src="./pizzaBanner.jpg" alt="bannier de pizza">
+                </div>
+            </section>
+            <section class="promotion-section">
+                <h1>Promotions</h1>
+                <h3>La cannibale</h3>
+                <div class="image-pizza">
+                    <div class="image-container">
+                        <img src="pizzaCannibale.jpg" alt="pizza cannibale">
+                        <button class="commande-boutton" onclick="commanderPromo('Cannibale', 'Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé', 12.99, 'pizzaCannibale.jpg')">Commandez</button>
+                        <p class="prix-text"><del>15.99$</del><span class="prix">12.99$</span></p>
+                    </div>
+                    <div class="text-1">
+                        <p class="description">Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
+                    </div>
+                </div>
+            </section>
+    </div>
+            <section>
+                <h3>La pizza del diablo</h3>
+                <div class="image-pizza">
+                    <div class="image-container">
+                        <img src="pizzaCannibale.jpg" alt="pizza pour les carnivores">
+                        <button class="commande-boutton" onclick="commanderPromo('Del Diablo', 'Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé', 18.99, 'pizzaCannibale.jpg')">Commandez</button>
+                        <p class="prix-text"><del>15.99$</del><span class="prix">18.99$</span></p>
+                    </div>
+                    <div class="text-1">
+                        <p class="description">Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>La pizza speciale</h3>
+                <div class="image-pizza">
+                    <div class="image-container">
+                        <img src="pizzaCannibale.jpg" alt="pizza avec des ingredients secrets">
+                        <button class="commande-boutton" onclick="commanderPromo('Spéciale', 'Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé', 98.99, 'pizzaCannibale.jpg')">Commandez</button>
+                        <p class="prix-text"><del>154.99$</del><span class="prix">98.99$</span></p>
+                    </div>
+                    <div class="text-1">
+                        <p class="description">Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer1">
+                <div class="footer-info">
+                    <h3>Contactez-nous</h3>
+                    <p>Téléphone : 01 23 45 67 89</p>
+                    <p>Email : contact@votrepizzeria.com</p>
+                    <p>Adresse : 123 Rue des Pizzas, Paris, France</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2024 Votre Pizzeria. Tous droits réservés.</p>
+                    <p><a href="#">Mentions légales</a></p>
+                </div>
+            </div>
+    </footer>
+    </body>
+</html>
