@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="Style2.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="logo-site">
+        <a href="pageAccueil.html">
+            <img src="./logo-site.png" class="logo" alt="logo du site">
+        </a>
+    </div>
+    <form id="loginForm" onsubmit="handleSubmit(event)">
+        <label for="name">Nom d'utilisateur</label> 
+        <input type="text" id="name" required>
+        
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" required>
+        
+        <label for="birthdate">Date de naissance</label>
+        <input type="date" id="birthdate" required>
+        
+        <label for="pays">Pays</label>
+        <select name="pays" id="pays">
+            <option value="france">France</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+        
+        <button type="submit" class="btnSubmit">Se connecter</button>
+    </form>
+</body>
+</html>

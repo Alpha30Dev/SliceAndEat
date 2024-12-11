@@ -1,54 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TestHtml</title>
-    <link rel="stylesheet" href="./logo-html.png">
-    <link rel="stylesheet" href="./Style2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-</head>
-<body>
-    <header>
-        <div class="logo-site"> 
-            <img src="./logo-site.png" alt="logo du site">
-            <div class="logo-text">Slice and eat</div>
-        </div>
-        <nav>
-            <ul>
-                <li>Menu</li>
-                <li>Promotions</li>
-                <li>Pizza of the day</li>
-            </ul>
-        </nav>
-        <div class="icon-account">
-            <img src="./Account.png" alt="logo-connextion">
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="title_command">COMMANDEZ EN LIGNE</div>
-                </div>
-                <div class="col">
-
-                    <div class="commande">
-                        <button  type="button" class="boutton 1">à emporter</button> 
-                    </div>
-                    <div class="commande">
-                        <button type="button" class="boutton 2">Livraison</button>
-                    </div>
-                </div>
-
-         </div>
-        </div>
-    </main>
-</body>
-
-</html> -->
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -62,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="main.js" defer></script>
     </head>
     <body>
         <header>
@@ -74,17 +24,24 @@
                   <span></span>
                   
                   <ul id="menu">
-                    <a href="#"><li>Menu</li></a>
+                    <a href="SelectionPizza.html"><li>Menu</li></a>
                     <a href="#"><li>Promotions</li></a>
                     <a href="#"><li>Pizza of the day</li></a>
                     <a href="#"><li>Contact</li></a>
                   </ul>
                 </div>
                 <div class="logo-site">
-                <img src="./logo-site.png" class="logo"alt="logo du site">
+                    <a href="pageAccueil.html">
+                        <img src="./logo-site.png" class="logo" alt="logo du site">
+                    </a>
                 </div>
                 <div class="right">
-                    <img src="./Account.png" class="utilisateur"alt="icone utilisateur">
+                    <img src="./Account.png" class="utilisateur" alt="icone utilisateur">
+                    <div class="panier-container">
+                        <img src="panier.png" class="panier" alt="icone panier">
+                        <span class="panier-count">0</span>
+                    </div>
+                    <button class="deconnexion-btn">Déconnexion</button>
                 </div>
               </nav>
         </header>
@@ -93,11 +50,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <!-- <div class="title_command">COMMANDEZ EN LIGNE</div> -->
                         </div>
                         <div class="col">
                             <div class="commande">
-                                <button  type="button" class="boutton-1">à emporter</button> 
+                                <button  type="button" class="boutton-1">Commandez maintenant!</button> 
                                 <button type="button" class="boutton-2">Livraison</button>
                             </div>
                         </div>
@@ -114,53 +70,53 @@
                     </div>
         
                     <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-                    <img class="slide-img" src="./pizza 1.jfif">
+                    <img class="slide-img" src="./pizzaBanner.jpg" alt="bannier de pizza">
         
                     <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
-                    <img class="slide-img" src="./pizza 2.jfif">
+                    <img class="slide-img" src="./pizzaBanner.jpg" alt="bannier de pizza">
         
                     <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
-                    <img class="slide-img" src="./pizza 3.jfif">
+                    <img class="slide-img" src="./pizzaBanner.jpg" alt="bannier de pizza">
                 </div>
             </section>
-            <section>
+            <section class="promotion-section">
                 <h1>Promotions</h1>
-                <h2>La cannibale</h2>
+                <h3>La cannibale</h3>
                 <div class="image-pizza">
                     <div class="image-container">
-                    <img src="./pizza 2.jfif" alt="pizza cannibale">
-                    <p><del>15.99$</del><span class="prix">12.99$</span></p>
+                        <img src="pizzaCannibale.jpg" alt="pizza cannibale">
+                        <button class="commande-boutton" onclick="commanderPromo('Cannibale', 'Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé', 12.99, 'pizzaCannibale.jpg')">Commandez</button>
+                        <p class="prix-text"><del>15.99$</del><span class="prix">12.99$</span></p>
                     </div>
                     <div class="text-1">
-                            <p>Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
-                            <button class="commande-boutton">Commandez</button>
+                        <p class="description">Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
                     </div>
                 </div>
             </section>
     </div>
             <section>
-                <h3>La pizza de gros porc</h3>
+                <h3>La pizza del diablo</h3>
                 <div class="image-pizza">
                     <div class="image-container">
-                    <img src="./pizza 1.jfif" alt="pizza de gros porc">
-                    <p><del>15.99$</del><span class="prix">18.99$</span></p>
+                        <img src="pizzaCannibale.jpg" alt="pizza pour les carnivores">
+                        <button class="commande-boutton" onclick="commanderPromo('Del Diablo', 'Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé', 18.99, 'pizzaCannibale.jpg')">Commandez</button>
+                        <p class="prix-text"><del>15.99$</del><span class="prix">18.99$</span></p>
                     </div>
                     <div class="text-1">
-                            <p>Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
-                            <button class="commande-boutton">Commandez</button>
+                        <p class="description">Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
                     </div>
                 </div>
             </section>
             <section>
-                <h3>La pizza de porc</h3>
+                <h3>La pizza speciale</h3>
                 <div class="image-pizza">
                     <div class="image-container">
-                    <img src="./pizza 3.jfif" alt="pizza de gros">
-                    <p><del>154.99$</del><span class="prix">98.99$</span></p>
+                        <img src="pizzaCannibale.jpg" alt="pizza avec des ingredients secrets">
+                        <button class="commande-boutton" onclick="commanderPromo('Spéciale', 'Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé', 98.99, 'pizzaCannibale.jpg')">Commandez</button>
+                        <p class="prix-text"><del>154.99$</del><span class="prix">98.99$</span></p>
                     </div>
                     <div class="text-1">
-                            <p>Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
-                            <button class="commande-boutton">Commandez</button>
+                        <p class="description">Sauce barbecue, Mozzarella, poulet rotie, merguez, haché au boeuf gout flammé</p>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="Style2.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <ul id="menu">
+                    <a href="SelectionPizza.html"><li>Menu</li></a>
+                    <a href="#"><li>Promotions</li></a>
+                    <a href="#"><li>Pizza of the day</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="logo-site">
+                <a href="pageAccueil.html">
+                    <img src="./logo-site.png" class="logo" alt="logo du site">
+                </a>
+            </div>
+            <div class="right">
+                <img src="./Account.png" class="utilisateur" alt="icone utilisateur">
+                <button class="deconnexion-btn">Déconnexion</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div><h1>Votre Panier</h1></div>
+        <section class="panier-container">
+            
+            <div id="panier-items">
+                <!-- Les articles du panier seront affichés ici -->
+            </div>
+            <button class="btnSubmit" onclick="passerCommande()">Passer la commande</button>
+            <div class="total-container">
+                <h3>Total: <span id="total-panier">0.00€</span></h3>
+            </div>
+        </section>
+        <section class="historique-container">
+            <h2 style="text-align: center; margin-top: 20px;">Historique des Commandes</h2>
+            <div id="historique-items">
+                <!-- Les anciennes commandes seront affichées ici -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
