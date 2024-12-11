@@ -1,6 +1,6 @@
 				Description du Projet
 
-Ce projet est une application web de pizzeria en ligne qui permet aux utilisateurs de parcourir un menu de pizzas, de passer des commandes, de gérer leur panier, et de consulter l'historique de leurs commandes.L'application offre également des fonctionnalités de connexion et de déconnexion pour une expérience utilisateur personnalisée.
+Ce projet est une application web de pizzeria en ligne qui permet aux utilisateurs de parcourir un menu de pizzas, de passer des commandes, de gérer leur panier, et de consulter l'historique de leurs commandes.L'application offre également des fonctionnalités de connexion et de déconnexion pour une expérience utilisateur personnalisée. avec une approche Mobile first
 
 			Fonctionnalités Développées
 
