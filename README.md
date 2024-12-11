@@ -25,6 +25,6 @@ Ce projet est une application web de pizzeria en ligne qui permet aux utilisateu
 - Utilisez le menu pour accéder à la sélection de pizzas et ajouter des articles à votre panier.
 - Connectez-vous pour passer des commandes et voir votre historique
 
-
+https://www.figma.com/design/1TGT46RPYP7b2nHx27PxDO/Mon-projet?node-id=0-1&t=EXbWvLIWWg5DclQx-1
 
 	Ce projet a été développé par Maxime Vandequin
